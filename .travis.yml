@@ -1,8 +1,9 @@
 language: python
 python:
-  - "3.6"
-  - "2.5"
+  - "3.9.2"
+  - "2.8.8"
 install:
   - pip install -r requirements.txt
+  - pip install coveralls
 script:
-  - py.test -v -r f --cov=.   --cov-report=html
+  - py.test -v -r f
